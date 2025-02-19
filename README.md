@@ -11,11 +11,12 @@ Simple video transcoding utility.
 - [ ] UE4 
 
 ## Credits
-[BepInEx](https://github.com/BepInEx)
-[AssetRipper](https://github.com/AssetRipper/AssetRipper)
-[FFMpeg](http://ffmpeg.org)
-[FFMpegCore](https://github.com/rosenbjerg/FFMpegCore)
-[CsvHelper](https://github.com/JoshClose/CsvHelper)
+- [BepInEx](https://github.com/BepInEx)
+- [AssetRipper](https://github.com/AssetRipper/AssetRipper)
+- [FFMpeg](http://ffmpeg.org)
+- [FFMpegCore](https://github.com/rosenbjerg/FFMpegCore)
+- [CsvHelper](https://github.com/JoshClose/CsvHelper)
+
 And the giants we stand on.
 
 ## Q&A
