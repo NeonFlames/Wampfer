@@ -1,0 +1,8 @@
+/dist/ffmpeg-src
+/dist/ffmpeg-win-x64
+/dist/ffmpeg-win-x86
+/dist/ffmpeg-linux-x64
+bin
+obj
+.publish
+

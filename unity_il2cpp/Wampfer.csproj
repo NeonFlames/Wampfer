@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>Wampfer</AssemblyName>
+    <Product>NeonFlames.Wampfer.IL2Cpp</Product>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.samboy.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+    <RootNamespace>Wampfer</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
+
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="FFMpegCore" Version="5.1.0" />
+
+    <ProjectReference Include="../shared/Wampfer.Shared.csproj" />
+
+    <Reference Include="Il2Cppmscorlib" HintPath="$(GAME_INTEROP)/Il2Cppmscorlib.dll" />
+    <Reference Include="UnityEngine" HintPath="$(GAME_INTEROP)/UnityEngine.dll" />
+    <Reference Include="UnityEngine.AssetBundleModule" HintPath="$(GAME_INTEROP)/UnityEngine.AssetBundleModule.dll" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(GAME_INTEROP)/UnityEngine.CoreModule.dll" />
+    <Reference Include="UnityEngine.Video" HintPath="$(GAME_INTEROP)/UnityEngine.VideoModule.dll" />
+  </ItemGroup>
+</Project>

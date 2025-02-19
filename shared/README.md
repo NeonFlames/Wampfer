@@ -1,0 +1,2 @@
+# Wampfer.Shared
+Shared logic

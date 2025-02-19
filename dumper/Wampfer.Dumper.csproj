@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+
+    <AssemmblyName>Wampfer.Dumper</AssemmblyName>
+    <Product>NeonFlames.Wampfer.Dumper</Product>
+    <Version>1.0.0</Version>
+    <OutputType>Exe</OutputType>
+
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <PublishSelfContained>true</PublishSelfContained>
+    <PublishRelease>true</PublishRelease>
+    <PublishSingleFile>true</PublishSingleFile>
+
+    <AssetRipper>../extern/AssetRipper/Source</AssetRipper>
+  </PropertyGroup>
+    
+  <ItemGroup>
+      <ProjectReference Include="$(AssetRipper)/AssetRipper.IO.Files/AssetRipper.IO.Files.csproj" />
+      <ProjectReference Include="$(AssetRipper)/AssetRipper.Assets/AssetRipper.Assets.csproj" />
+      <ProjectReference Include="$(AssetRipper)/AssetRipper.Import/AssetRipper.Import.csproj" />
+  </ItemGroup>
+</Project>

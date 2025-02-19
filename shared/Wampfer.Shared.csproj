@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Wampfer.Shared</AssemblyName>
+    <Product>NeonFlames.Wampfer.Shared</Product>
+    <Version>1.0.0</Version>
+    <LangVersion>10.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+    
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
+
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="FFMpegCore" Version="5.1.0" />
+  </ItemGroup>
+</Project>
